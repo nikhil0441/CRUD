@@ -3,25 +3,25 @@
     {
       "Name": "Nikhil Patel",
       "Age": 21,
-      "Cheaking In": "27-01-2025",
-      "Cheak Out": "02-02-2025",
-      "Phone Number": 9039373762,
+      "Cheaking_In": "27-01-2025",
+      "Cheak_Out": "02-02-2025",
+      "Phone_Number": 9039373762,
       "Member": 4
     },
     {
       "Name": "Harshal",
       "Age": 21,
-      "Cheaking In": "26-01-2025",
-      "Cheak Out": "30-01-2025",
-      "Phone Number": 9039373762,
+      "Cheaking_In": "26-01-2025",
+      "Cheak_Out": "30-01-2025",
+      "Phone_Number": 9039373762,
       "Member": 2
     },
     {
       "Name": "Amar Nath",
       "Age": 30,
-      "Cheaking In": "24-01-2025",
-      "Cheak Out": "02-02-2025",
-      "Phone Number": 9039373762,
+      "Cheaking_In": "24-01-2025",
+      "Cheak_Out": "02-02-2025",
+      "Phone_Number": 9039373762,
       "Member": 4
     }
   ]
