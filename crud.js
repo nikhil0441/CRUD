@@ -7,7 +7,7 @@ let fetchData = async () => {
     console.log(data);
 
     let show = document.querySelector("#showData");
-    data.map((e) => {
+   // data.map((e) => {
       // show.innerHTML += `
       //           <div style="border: 1px solid black; padding: 10px; margin: 10px;">
       //               <h2>Name: ${e.Name}</h2>
@@ -21,15 +21,20 @@ let fetchData = async () => {
       data.map((e)=>{
         show.innerHTML += `
         <tr>
-        <td>${e.name}</td>
+        <td>${e.Name}</td>
         <td>${e.Age}</td>
         <td>${e.Cheaking_In}</td>
         <td>${e.Cheak_Out}</td>
         <td>${e.Phone_Number}</td>
         <td>${e.Member}</td>
+        <td onclick="deletee(${e.id})">Delete</td>
         </tr>
         `;
       })
-    });
-  } 
+    };
+  
 
+let deletee=(id)=>{
+ let url = `http://localhost:3000/Booking/${id}`;
+ fetch(url,{method:"DELETE"});
+}
