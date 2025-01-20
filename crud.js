@@ -27,7 +27,8 @@ let fetchData = async () => {
         <td>${e.Cheak_Out}</td>
         <td>${e.Phone_Number}</td>
         <td>${e.Member}</td>
-        <td onclick="deletee(${e.id})">Delete</td>
+        <td onclick="deletee(${e.id})">Deletee</td>
+         <td onclick="updatee(${e.id})">Update</td>
         </tr>
         `;
       })
@@ -37,4 +38,16 @@ let fetchData = async () => {
 let deletee=(id)=>{
  let url = `http://localhost:3000/Booking/${id}`;
  fetch(url,{method:"DELETE"});
+}
+
+
+let updatee=async(id)=>{
+ 
+  let url = `http://localhost:3000/Booking/${id}`;
+
+  let res= await fetch(url);
+  let data= await res.json();
+  console.log(data);
+  
+
 }
